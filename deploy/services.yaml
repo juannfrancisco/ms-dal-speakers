@@ -1,0 +1,16 @@
+## EXPOSE
+kind: Service
+apiVersion: v1
+metadata:
+  name: ms-dal-speakers-svc
+spec:
+  selector:
+    app: ms-dal-speakers
+  type: NodePort
+  ports:
+  #---------------------------------------- [CONTAINER PORT: srv-measurement]  -------------------------------#
+  - name: ms-dal-speakers
+    protocol: TCP
+    nodePort: 30191
+    port: 9091
+    targetPort: 9091

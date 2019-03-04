@@ -6,7 +6,7 @@
 
     <groupId>cl.zenta.example.graphql</groupId>
     <artifactId>ms-dal-speakers</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>v1.0.0</version>
 
 
     <properties>
@@ -78,7 +78,7 @@
                 <version>0.9.9</version>
                 <configuration>
                     <to>
-                        <image>events/ms-dal-speakers</image>
+                        <image>kubernetes-101-227215/ms-dal-speakers</image>
                     </to>
                 </configuration>
             </plugin>

@@ -1,0 +1,23 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: ms-dal-speakers
+  labels:
+    app: ms-dal-speakers
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ms-dal-speakers
+  template:
+    metadata:
+      labels:
+        app: ms-dal-speakers
+    spec:
+      containers:
+      - name: ms-dal-talks
+        image: gcr.io/kubernetes-101-227215/ms-dal-speakers:v1.0.0
+        ports:
+        - name: dal-speakers
+          containerPort: 9091
+          protocol: TCP
