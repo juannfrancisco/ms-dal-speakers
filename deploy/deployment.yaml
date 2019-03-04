@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: ms-dal-talks
-        image: gcr.io/kubernetes-101-227215/ms-dal-speakers:v1.0.0
+        image: gcr.io/kubernetes-101-227215/ms-dal-speakers:latest
         ports:
         - name: dal-speakers
           containerPort: 9091
